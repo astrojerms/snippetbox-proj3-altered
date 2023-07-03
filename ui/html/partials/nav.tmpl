@@ -1,9 +1,9 @@
 {{define "nav"}}
 <nav>
     <div>
-        <a href='/'>Home</a>
+        <a href='/'>Create Snippet</a>
          {{if .IsAuthenticated}}
-            <a href='/snippet/create'>Create snippet</a>
+            <a href='/snippet/create'>Home</a>
         {{end}}
     </div>
     <div>
@@ -17,10 +17,6 @@
             <a href='/user/signup'>Signup</a>
             <a href='/user/login'>Login</a>
         {{end}}
-    <div>
-        <label></label>
-        <input type='text' name='search' value='' defaultValue='search'>
-    </div>
     </div>
 </nav>
 {{end}}
